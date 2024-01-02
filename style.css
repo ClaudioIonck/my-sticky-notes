@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background: #9BB8CD;
+    /* background: #F9B572; */
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+}
+
+.note {
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-note:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.note-container {
+    position: relative;
+}
+
+.delete-note {
+    position: absolute;
+    bottom: 15px;
+    right: 7px;
+    border: none;
+    background: none;
+    color: #ff6961;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.swal-title {
+    font-family: Arial, sans-serif;
+}
+
+.swal-text {
+    font-family: Arial, sans-serif; 
+}
