@@ -9,7 +9,7 @@ getNotes().forEach((note) => {
 addNoteButton.addEventListener("click", () => addNote());
 
 function getNotes() {
-    return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
+    return JSON.parse(localStorage.getItem("notes") || "[]");
 }
 
 function saveNotes(notes) {
