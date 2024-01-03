@@ -39,18 +39,24 @@ function createNoteElement(id, content) {
     });
 
     deleteButton.addEventListener("click", () => {
-        swal({
-            title: "Are you sure?",
-            text: "Once deleted, you will not be able to recover this sticky note!",
-            icon: "warning",
-            buttons: true,
-            dangerMode: true,
-        })
-        .then((willDelete) => {
-            if (willDelete) {
-                deleteNote(id, noteElement);
-            }
-        });
+        const currentNoteContent = element.value.trim();
+
+        if (currentNoteContent !== "") {
+            swal({
+                title: "Are you sure?",
+                text: "Once deleted, you will not be able to recover this sticky note!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    deleteNote(id, noteElement);
+                }
+            });
+        } else {
+            deleteNote(id, noteElement);
+        }
     });
 
     noteElement.appendChild(element);
