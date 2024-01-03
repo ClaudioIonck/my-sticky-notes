@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #9BB8CD;
+    background: #A6B1E1;
     /* background: #F9B572; */
 }
 
@@ -17,6 +17,7 @@ body {
     padding: 16px;
     border: none;
     border-radius: 10px;
+    background: #F9ED69;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
     resize: none;
     font-family: sans-serif;
